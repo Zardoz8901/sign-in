@@ -8,48 +8,68 @@
     <title>Sign-Up</title>
 </head>
 <body>
-    <h1>Sign-Up</h1>
-    <form action="">
-        <section>
-            <h1>Contact Information</h1>
-            <section>
-                <input type="text" name="" id="">
-                <label for=""></label>
-                <input type="text" name="" id="">
-                <label for=""></label>
-                <input type="email" name="" id="">
-                <label for=""></label>
-            </section>
-            <section>
-                <h1>Password</h1>
-                <input type="password" name="" id="">
-                <label for=""></label>
-                <input type="password" name="" id="">
-                <label for=""></label>
-            </section>
-            <fieldset>
+    <div class="left-banner">
+        <img src="Assets/off-world-1.png" alt="Dramatic off-world vista of a gas
+        harvester platform and a solitary figure in the foreground">
+    </div>
+    <div class="column">
+        <div class="spacer intro">
+            <p>A new life awaits you in the off-world colonies</p>
+            <p>A smiling land of golden opportunities</p>
+            <p>A bold chance to begin again</p>       
+        </div>
+        <div class="card">
+            
+            <form action="">
                 <section>
-                    <legend>Voight-Kampf</legend>
-                    <ul>
-                        <li>
-                            <input type="radio" name="" id="">
-                            <label for=""></label></li>
-                        <li>
-                            <input type="radio" name="" id="">
-                            <label for=""></label></li>
-                    </ul>
+                    <h2>Name and Email</h2>
+                    <section>
+                        <label for="firstname">First</label>
+                        <input type="text" name="firstname " id="firstname">
+                        <label for="lastname">Last</label>
+                        <input type="text" name="lastname" id="lastname">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </section>
+                    <section>
+                        <h2>Password</h2>
+                        <input type="password" name="" id="">
+                        <label for=""></label>
+                        <input type="password" name="" id="">
+                        <label for=""></label>
+                    </section>
+                    <fieldset class="physio-anatomy">
+                        <section>
+                            <legend>Physio-Anatomy</legend>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="type" id="human">
+                                    <label for="human">Human</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="type" id="android">
+                                    <label for="android">Replicant</label>
+                                </li>
+                            </ul>
+                        </section>
+                    </fieldset>
+                    <section>
+                        <h2>Voight-Kampff</h2>
+                        <p>Someone gives you a calfskin wallet for your birthday.</p>
+                        <p>How do you react?</p>
+                        <textarea name="" id="" cols="50" rows="4"></textarea>
+                        <p>Your little girl shows you her butterfly collection, plus the killing jar.</p>
+                        <p> What do you say?</p>
+                        <textarea name="" id="" cols="50" rows="4"></textarea>
+                        <p>Describe in single words only the good things that come to mind about your mother.</p>
+                        <textarea name="" id="" cols="50" rows="4"></textarea>
+                    </section>
+                    <button type="submit">Bon Voyage!</button>
                 </section>
-            </fieldset>
-            <section>
-                <h1>Questions</h1>
-                <p></p>
-                <textarea name="" id="" cols="30" rows="4"></textarea>
-                <p></p>
-                <textarea name="" id="" cols="30" rows="4"></textarea>
-                <p></p>
-                <textarea name="" id="" cols="30" rows="4"></textarea>
-            </section>
-        </section>
-    </form>
+            </form>
+        </div>
+        <div class="spacer">
+        </div>
+    </div>
 </body>
 </html>

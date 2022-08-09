@@ -44,3 +44,57 @@ table {
 }
 
 /*CSS Reset End*/ 
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #E1BD74;
+    color: #08140A;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+button, input, select, textarea {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content: end;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.intro>p {
+   padding: .4rem;
+}
+
+img {
+    width: 40vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDE087;
+    box-shadow: 0 3px 20px 0px #615B37;
+    width: 60vw;
+    height: 48vh;
+}
+
+.spacer {
+    height: 20vh;
+    width: 60vw;
+}
+
+button {
+    font-weight: 500;
+    padding: .5rem;
+}
