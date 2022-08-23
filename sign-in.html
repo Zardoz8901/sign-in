@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sign-in-style.css">
+    <script src="sign-in.js" async></script>
     <title>Sign-Up</title>
 </head>
 <body>
@@ -23,41 +24,48 @@
                 <div>
                     <div class="form-item">
                         <div class="form-input">
-                            <label for="firstname">First</label>
-                            <input type="text" name="firstname " id="firstname">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname " id="firstname" required>
                         </div>
                         <div class="form-input">
-                            <label for="lastname">Last</label>
-                            <input type="text" name="lastname" id="lastname">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" required>
+                        </div>               
+                    </div>
+                    <div class="form-item">
+                        <div class="form-input">
+                            <label for="email-one">E-mail</label>
+                            <input type="email" name="email-one" id="email-one" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="email-two">Confirm E-mail</label>
+                            <input type="email" name="email-two" id="email-two" required>
                         </div>
                     </div>
                     <div class="form-item">
                         <div class="form-input">
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email">
+                            <label for="password-one">Password</label>
+                            <input type="password" name="password-one" id="password-one" required>
+                        </div>
+                        <div class="form-input">
+                            <label for="password-two">Confirm Password</label>
+                            <input type="password" name="password-two" id="password-two">
                         </div>
                     </div>
-                    <div class="form-item">
-                        <h2>Password</h2>
-                        <input type="password" name="" id="">
-                        <label for=""></label>
-                        <input type="password" name="" id="">
-                        <label for=""></label>
-                    </div>
-                    <fieldset class="form-item">
+                    <fieldset class="form-radio">
                             <legend>Physio-Anatomy</legend>
                             <ul>
-                                <li>
+                                <li class="radio one">
                                     <input type="radio" name="type" id="human">
                                     <label for="human">Human</label>
                                 </li>
-                                <li>
+                                <li class="radio two">
                                     <input type="radio" name="type" id="android">
                                     <label for="android">Replicant</label>
                                 </li>
                             </ul>
                     </fieldset>
-                    <div class="form-item">
+                    <div class="form-areas">
                         <div class="form-area">
                             <h2>Voight-Kampff</h2>
                             <p>Someone gives you a calfskin wallet for your birthday.</p>
@@ -73,8 +81,8 @@
                             <p>Describe in single words only the good things that come to mind about your mother.</p>
                             <textarea name="" id="" cols="50" rows="4"></textarea>
                         </div>
+                        <button type="submit" class="button">Bon Voyage!</button>
                     </div>
-                    <button type="submit" class="button">Bon Voyage!</button>
                 </div>
             </form>
         </div>

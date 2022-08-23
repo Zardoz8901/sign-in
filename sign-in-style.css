@@ -45,22 +45,95 @@ table {
 
 /*CSS Reset End*/ 
 
+@font-face {
+	font-family: "Serpentine-italic";
+	src: url("/Assets/Serpentine-MediumItalic.ttf")format("truetype");
+}
+
+@font-face {
+	font-family: "Alloy";
+	src: url(/Assets/Alloy\ Regular.ttf)format("truetype");
+}
+
 body {
     height: 100vh;
     display: flex;
 	flex-direction: row;
 	justify-content: center;
 	background-color: aliceblue;
+	font-family: "Alloy", sans-serif;
+	height: 100vh;
+}
 
+button, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	width : 60ch;
+	box-sizing: border-box;
+	padding: 10px;
+  } 
+  
+input {
+	width: 30ch;
+	margin: .5em;
+	padding: 5px;
+  }
+
+ul {
+	display: flex;
+	flex-direction: row;
+	padding-left: 12ch;
+}
+
+input[type="radio"] {
+	appearance: none;
+  }
+
+fieldset {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 1em;
+}
+
+legend {
+	position: absolute;
+	left: 14ch;
+}
+
+h2 {
+	opacity: .6;
+	padding-bottom: 1em;
+}
+
+.form-area>p {
+	margin: 1em 0;
+}
+
+.radio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14ch;
+  }
+
+.radio.one {
+	color: green;
+}
+
+.radio.two {
+	color:red
 }
 
 .card {
 	background-color: antiquewhite;
+	max-height: fit-content;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: ;
+	height: 100vh;
 }
 
 .card-image {
@@ -75,18 +148,37 @@ body {
     flex-direction: column;
     align-items: flex-end;
 	font-size: 2em;
-	width: 38ch;
+	width: 34ch;
 	padding: .5em;
 	padding-bottom: 2em;
-}
-
-.card-intro > p {
-	padding: .2em 0;
+	font-family: "Serpentine-italic", sans-serif;
 }
 
 .form {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+}
+
+.form-item {
+	display: flex;
+	width: auto;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.form-input:first-child, .form-input:last-child {
+	position: relative;
+}
+
+.form-input:first-child>label {
+	position: absolute;
+	width: 100px;
+	right: 136px;
+	bottom: 14px;
+}
+
+.form-input:last-child>label{
+	position: absolute;
+	width: 180px;
+	right: 56px;
+	bottom: 14px;
 }
