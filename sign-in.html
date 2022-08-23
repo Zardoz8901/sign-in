@@ -8,38 +8,43 @@
     <title>Sign-Up</title>
 </head>
 <body>
-    <div class="left-banner">
-        <img src="Assets/off-world-1.png" alt="Dramatic off-world vista of a gas
+    <div class="card-image">
+        <img src="" alt="Dramatic off-world vista of a gas
         harvester platform and a solitary figure in the foreground">
     </div>
-    <div class="column">
-        <div class="spacer intro">
+    <div class="card">
+        <div class="card-intro">
             <p>A new life awaits you in the off-world colonies</p>
             <p>A smiling land of golden opportunities</p>
             <p>A bold chance to begin again</p>       
         </div>
         <div class="card">
-            
-            <form action="">
-                <section>
-                    <h2>Name and Email</h2>
-                    <section>
-                        <label for="firstname">First</label>
-                        <input type="text" name="firstname " id="firstname">
-                        <label for="lastname">Last</label>
-                        <input type="text" name="lastname" id="lastname">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email">
-                    </section>
-                    <section>
+            <form action="" class="form">
+                <div>
+                    <div class="form-item">
+                        <div class="form-input">
+                            <label for="firstname">First</label>
+                            <input type="text" name="firstname " id="firstname">
+                        </div>
+                        <div class="form-input">
+                            <label for="lastname">Last</label>
+                            <input type="text" name="lastname" id="lastname">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-input">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div class="form-item">
                         <h2>Password</h2>
                         <input type="password" name="" id="">
                         <label for=""></label>
                         <input type="password" name="" id="">
                         <label for=""></label>
-                    </section>
-                    <fieldset class="physio-anatomy">
-                        <section>
+                    </div>
+                    <fieldset class="form-item">
                             <legend>Physio-Anatomy</legend>
                             <ul>
                                 <li>
@@ -51,24 +56,27 @@
                                     <label for="android">Replicant</label>
                                 </li>
                             </ul>
-                        </section>
                     </fieldset>
-                    <section>
-                        <h2>Voight-Kampff</h2>
-                        <p>Someone gives you a calfskin wallet for your birthday.</p>
-                        <p>How do you react?</p>
-                        <textarea name="" id="" cols="50" rows="4"></textarea>
-                        <p>Your little girl shows you her butterfly collection, plus the killing jar.</p>
-                        <p> What do you say?</p>
-                        <textarea name="" id="" cols="50" rows="4"></textarea>
-                        <p>Describe in single words only the good things that come to mind about your mother.</p>
-                        <textarea name="" id="" cols="50" rows="4"></textarea>
-                    </section>
-                    <button type="submit">Bon Voyage!</button>
-                </section>
+                    <div class="form-item">
+                        <div class="form-area">
+                            <h2>Voight-Kampff</h2>
+                            <p>Someone gives you a calfskin wallet for your birthday.</p>
+                            <p>How do you react?</p>
+                        </div>
+                        <div class="form-area">
+                            <textarea name="" id="" cols="50" rows="4"></textarea>
+                            <p>Your little girl shows you her butterfly collection, plus the killing jar.</p>
+                            <p> What do you say?</p>
+                        </div>
+                        <div class="form-area">
+                            <textarea name="" id="" cols="50" rows="4"></textarea>
+                            <p>Describe in single words only the good things that come to mind about your mother.</p>
+                            <textarea name="" id="" cols="50" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="button">Bon Voyage!</button>
+                </div>
             </form>
-        </div>
-        <div class="spacer">
         </div>
     </div>
 </body>

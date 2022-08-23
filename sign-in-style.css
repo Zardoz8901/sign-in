@@ -44,57 +44,49 @@ table {
 }
 
 /*CSS Reset End*/ 
+
 body {
-    display: flex;
-    flex-flow: row nowrap;
-    background-color: #E1BD74;
-    color: #08140A;
-    align-items: center;
-    width: 100vw;
     height: 100vh;
-}
-
-button, input, select, textarea {
-    font-family: 'Courier New', Courier, monospace;
-
-}
-
-.intro {
     display: flex;
-    flex-direction: column;
-    font-size: 2rem;
-    justify-content: end;
-    align-items: center;
-    padding-bottom: 2rem;
-}
+	flex-direction: row;
+	justify-content: center;
+	background-color: aliceblue;
 
-.intro>p {
-   padding: .4rem;
-}
-
-img {
-    width: 40vw;
-    height: 100vh;
-    object-fit: cover;
 }
 
 .card {
+	background-color: antiquewhite;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: ;
+}
+
+.card-image {
+    width: 33%;
+    min-width: 300px;
+    height: 100vh;
+}
+
+.card-intro {
     display: flex;
+	flex: 0 1 1;
     flex-direction: column;
+    align-items: flex-end;
+	font-size: 2em;
+	width: 38ch;
+	padding: .5em;
+	padding-bottom: 2em;
+}
+
+.card-intro > p {
+	padding: .2em 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #EDE087;
-    box-shadow: 0 3px 20px 0px #615B37;
-    width: 60vw;
-    height: 48vh;
-}
-
-.spacer {
-    height: 20vh;
-    width: 60vw;
-}
-
-button {
-    font-weight: 500;
-    padding: .5rem;
 }
